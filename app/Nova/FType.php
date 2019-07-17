@@ -4,18 +4,17 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\BelongsTo;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class FArms extends Resource
+class FType extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\\Models\\FArm';
+    public static $model = 'App\Models\FType';
 
     /**
      * The logical group associated with the resource.
@@ -49,12 +48,8 @@ class FArms extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make('FArms', 'id')->sortable(),
-            Text::make('FArms', 'f_arms')->sortable(),
-            Text::make('Oy', 'desc')->sortable(),
-            BelongsTo::make('ftype')->display('type_farms'),
-            BelongsTo::make('ammo')->display('caliber'),
-            // Text::make()->sortable(),
+            ID::make('id')->sortable(),
+            Text::make('type_farms')->sortable()
         ];
     }
 
