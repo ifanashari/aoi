@@ -3,6 +3,8 @@
 namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\BelongsTo;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -13,7 +15,14 @@ class FArms extends Resource
      *
      * @var string
      */
-    public static $model = 'App\\Models\\FArms';
+    public static $model = 'App\\Models\\FArm';
+
+    /**
+     * The logical group associated with the resource.
+     *
+     * @var string
+     */
+    public static $group = 'Store';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -40,7 +49,12 @@ class FArms extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make()->sortable(),
+            ID::make('FArms', 'id')->sortable(),
+            Text::make('FArms', 'f_arms')->sortable(),
+            Text::make('Oy', 'desc')->sortable(),
+            // BelongsTo::make('ammos')
+            // Text::make()->sortable(),
+            // Text::make()->sortable(),
         ];
     }
 
