@@ -15,6 +15,10 @@ class CreateFArmsTable extends Migration
     {
         Schema::create('f_arms', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->String('f_arms');
+            $table->String('desc');
+            $table->unsignedBigInteger('type_id')->nullable();
+            $table->unsignedBigInteger('ammo_id')->nullable();
             $table->timestamps();
         });
     }
