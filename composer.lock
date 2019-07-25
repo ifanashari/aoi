@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6dd594ed2dedd4543079935febcb3b5e",
+    "content-hash": "4a67b3672cdbc9b4092dc47957e395b8",
     "packages": [
         {
             "name": "aoi/AmmoField",
@@ -96,6 +96,47 @@
                 "time"
             ],
             "time": "2019-06-17T15:19:18+00:00"
+        },
+        {
+            "name": "digitalcloud/nova-custom-views",
+            "version": "v1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DigitalCloud/nova-custom-views.git",
+                "reference": "79f96725240ba9c7cc7dab3c06d72e276132bbc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DigitalCloud/nova-custom-views/zipball/79f96725240ba9c7cc7dab3c06d72e276132bbc5",
+                "reference": "79f96725240ba9c7cc7dab3c06d72e276132bbc5",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "devmtm\\NovaCustomViews\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Motaz Marouf",
+                    "email": "dev.mmarouf@hotmail.com"
+                }
+            ],
+            "description": "A Laravel Nova custom views.",
+            "keywords": [
+                "custom views",
+                "laravel",
+                "nova"
+            ],
+            "time": "2018-11-12T11:42:34+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1158,6 +1199,74 @@
                 "php"
             ],
             "time": "2019-05-25T20:07:01+00:00"
+        },
+        {
+            "name": "nova-custom-views/ammos-views",
+            "version": "dev-feature/custom-view",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/views/ammos",
+                "reference": "e6e14b639ff87d61020af8fd441589cac06a865b",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NovaCustomViews\\AmmosViews\\AmmosViewsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NovaCustomViews\\AmmosViews\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova custom views.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ]
+        },
+        {
+            "name": "nova-custom-views/f-arms-views",
+            "version": "dev-feature/custom-view",
+            "dist": {
+                "type": "path",
+                "url": "./nova-components/views/f-arms",
+                "reference": "0848789ad2f394fdf3dcc882b9a92607d24989ff",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NovaCustomViews\\FArmsViews\\FArmsViewsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NovaCustomViews\\FArmsViews\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova custom views.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ]
         },
         {
             "name": "opis/closure",
@@ -4116,16 +4225,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
+                "reference": "e899757bb3df5ff6e95089132f32cd59aac2220a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
-                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/e899757bb3df5ff6e95089132f32cd59aac2220a",
+                "reference": "e899757bb3df5ff6e95089132f32cd59aac2220a",
                 "shasum": ""
             },
             "require": {
@@ -4138,7 +4247,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -4161,7 +4270,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2019-07-08T05:24:54+00:00"
+            "time": "2019-07-25T05:29:42+00:00"
         },
         {
             "name": "phpunit/phpunit",

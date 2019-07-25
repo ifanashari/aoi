@@ -4,8 +4,11 @@ namespace App\Nova;
 
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\HasMany;
 use Illuminate\Http\Request;
 use Laravel\Nova\Http\Requests\NovaRequest;
+
+use App\Nova\FArms;
 
 class Ammo extends Resource
 {
@@ -62,6 +65,8 @@ class Ammo extends Resource
             Text::make('Effective Range', 'e_range')
                 ->sortable()
                 ->rules('required'),
+
+            HasMany::make('FArms', 'hmFArms', FArms::class)
         ];
     }
 

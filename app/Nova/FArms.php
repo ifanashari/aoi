@@ -54,9 +54,7 @@ class FArms extends Resource
             Text::make('FArms', 'f_arms')->sortable(),
             Text::make('Oy', 'desc')->sortable(),
             BelongsTo::make('ftype')->display('type_farms'),
-            // BelongsTo::make('ammo')->display('caliber'),
-            // Text::make()->sortable(),
-            AmmoField::make('ammo')
+            BelongsTo::make('ammo')->display('caliber'),
         ];
     }
 

@@ -1,0 +1,11 @@
+{
+    "views": {
+        "f-arms": {
+            "index": {
+                "route": "index",
+                "component": "Index",
+                "name": "f-arms-index-view"
+            }
+        }
+    }
+}
