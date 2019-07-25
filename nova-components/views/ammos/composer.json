@@ -1,0 +1,29 @@
+{
+    "name": "nova-custom-views/ammos-views",
+    "description": "A Laravel Nova custom views.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NovaCustomViews\\AmmosViews\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NovaCustomViews\\AmmosViews\\AmmosViewsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
