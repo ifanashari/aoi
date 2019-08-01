@@ -37,10 +37,10 @@ class FArms extends Resource
      *
      * @return string
      */
-    public static function singularLabel()
-    {
-        return "ifan";
-    }
+    // public static function singularLabel()
+    // {
+    //     return "ifan";
+    // }
 
     /**
      * The columns that should be searched.
