@@ -16,7 +16,8 @@
         "laravel/nova": "*",
         "laravel/tinker": "^1.0",
         "nova-custom-views/f-arms-views": "*",
-        "nova-custom-views/ammos-views": "*"
+        "nova-custom-views/ammos-views": "*",
+        "rie/aoicustomcard": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -84,6 +85,10 @@
         {
             "type": "path",
             "url": "./nova-components/views/ammos"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/Aoicustomcard"
         }
     ]
 }

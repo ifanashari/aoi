@@ -1,0 +1,11 @@
+// Nova Card CSS
+.c-aoi-card.card-panel{
+    height: fit-content !important;
+
+    .f-chart{
+        canvas{
+            width: 100%;
+            height: 500px;   
+        }
+    }
+}
