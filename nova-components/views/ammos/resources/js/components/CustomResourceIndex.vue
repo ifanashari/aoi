@@ -1,7 +1,6 @@
 <template>
     <loading-view :loading="initialLoading" :dusk="resourceName + '-index-component'">
         <custom-index-header v-if="!viaResource" class="mb-3" :resource-name="resourceName" />
-
         <div v-if="shouldShowCards">
             <cards
                 v-if="smallCards.length > 0"
@@ -44,7 +43,7 @@
                 <custom-index-toolbar v-if="!viaResource" :resource-name="resourceName" />
 
                 <!-- Create / Attach Button -->
-                <custom-create-resource-button
+                <custom-create-resource-buttons
                     :singular-name="singularName"
                     :resource-name="resourceName"
                     :via-resource="viaResource"
@@ -221,7 +220,7 @@
                         }}
                     </h3>
 
-                    <custom-create-resource-button
+                    <custom-create-resource-buttons
                         classes="btn btn-sm btn-outline inline-flex items-center"
                         :singular-name="singularName"
                         :resource-name="resourceName"
@@ -232,7 +231,7 @@
                         :authorized-to-create="authorizedToCreate && !resourceIsFull"
                         :authorized-to-relate="authorizedToRelate"
                     >
-                    </custom-create-resource-button>
+                    </custom-create-resource-buttons>
                 </div>
             </div>
 

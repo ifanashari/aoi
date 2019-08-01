@@ -38,7 +38,9 @@
                 },
             }"
         >
-            {{ __('Renew') }} {{ singularName }}
+            <!-- <span v-if="singularName != 'FArm'"> -->
+                {{ __('FArms') }} {{ singularName }}
+            <!-- </span> -->
         </router-link>
     </div>
 </template>
