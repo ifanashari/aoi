@@ -7,5 +7,5 @@ Nova.booting((Vue, router) => {
     })
     Vue.component('detail-custom-has-many-field', require('./components/CustomHasManyField'))
     Vue.component('custom-resource-index', require('./components/CustomResourceIndex'))
-    Vue.component('custom-create-resource-button', require('./components/CustomCreateResourceButton'))
+    Vue.component('custom-create-resource-buttons', require('./components/CustomCreateResourceButton'))
 })

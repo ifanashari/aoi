@@ -33,6 +33,16 @@ class FArms extends Resource
     public static $title = 'id';
 
     /**
+     * Get the displayable singular label of the resource.
+     *
+     * @return string
+     */
+    public static function singularLabel()
+    {
+        return "ifan";
+    }
+
+    /**
      * The columns that should be searched.
      *
      * @var array

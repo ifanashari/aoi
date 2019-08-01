@@ -6,7 +6,6 @@
             :resource-id="resourceId"
             :resource-name="resourceName"
         />
-        oy
         <div v-if="shouldShowCards">
             <cards
                 v-if="smallCards.length > 0"
@@ -36,7 +35,6 @@
             class="mb-8"
             :key="panel.id"
         >
-            {{ panel.component }}
             <component
                 :is="panel.component"
                 :resource-name="resourceName"
@@ -448,8 +446,6 @@ export default {
                         var chm = {};
                         chm = field;
                         chm.component = "custom-has-many-field"
-                        // panels[field.name] = this.createPanelForRelationship(chm)
-                        // console.log(panels[field.name])
                         return (panels[field.name] = this.createPanelForRelationship(chm))
                     } else if (panels[field.panel]) {
                         return panels[field.panel].fields.push(field)
