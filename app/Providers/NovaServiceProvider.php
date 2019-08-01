@@ -9,6 +9,7 @@ use Laravel\Nova\NovaApplicationServiceProvider;
 use App\Nova\Metrics\ArmsNumber;
 use App\Nova\Metrics\FTypeGraph;
 use App\Nova\Metrics\FArmTypeNumber;
+use Rie\Aoicustomcard\Aoicustomcard;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -62,7 +63,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             // new Help,
             new ArmsNumber,
             new FTypeGraph,
-            new FArmTypeNumber
+            new FArmTypeNumber,
+            new Aoicustomcard
         ];
     }
 

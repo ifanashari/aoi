@@ -1,0 +1,11 @@
+.c-aoi-card.card-panel {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+.c-aoi-card.card-panel .f-chart canvas {
+  width: 100%;
+  height: 500px;
+}
+
