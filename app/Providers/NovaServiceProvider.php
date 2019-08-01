@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use App\Nova\Metrics\ArmsNumber;
 use App\Nova\Metrics\FTypeGraph;
+use App\Nova\Metrics\FArmTypeNumber;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -60,7 +61,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         return [
             // new Help,
             new ArmsNumber,
-            new FTypeGraph
+            new FTypeGraph,
+            new FArmTypeNumber
         ];
     }
 
