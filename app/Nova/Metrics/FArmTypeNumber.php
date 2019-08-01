@@ -3,11 +3,11 @@
 namespace App\Nova\Metrics;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Metrics\Trend;
+use Laravel\Nova\Metrics\Partition;
 
-use App\Models\FType;
+use App\Models\FArm;
 
-class FTypeGraph extends Trend
+class FArmTypeNumber extends Partition
 {
     /**
      * Calculate the value of the metric.
@@ -17,22 +17,7 @@ class FTypeGraph extends Trend
      */
     public function calculate(Request $request)
     {
-        return $this->countByDays($request, FType::class)
-                    ->showLatestValue();
-    }
-
-    /**
-     * Get the ranges available for the metric.
-     *
-     * @return array
-     */
-    public function ranges()
-    {
-        return [
-            30 => '30 Days',
-            60 => '60 Days',
-            90 => '90 Days',
-        ];
+        return $this->count($request, FArm::class, 'type_id');
     }
 
     /**
@@ -52,6 +37,6 @@ class FTypeGraph extends Trend
      */
     public function uriKey()
     {
-        return 'f-type-graph';
+        return 'f-arm-type-number';
     }
 }
