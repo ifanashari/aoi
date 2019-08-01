@@ -7,6 +7,7 @@ use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use App\Nova\Metrics\ArmsNumber;
+use App\Nova\Metrics\FTypeGraph;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -58,7 +59,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         return [
             // new Help,
-            new ArmsNumber
+            new ArmsNumber,
+            new FTypeGraph
         ];
     }
 
