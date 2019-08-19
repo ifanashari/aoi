@@ -6,10 +6,7 @@ use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
-use App\Nova\Metrics\ArmsNumber;
-use App\Nova\Metrics\FTypeGraph;
-use App\Nova\Metrics\FArmTypeNumber;
-use Rie\Aoicustomcard\Aoicustomcard;
+use SmiCollateral\ChartDashboard\ChartDashboard;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -60,11 +57,44 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            // new Help,
-            new ArmsNumber,
-            new FTypeGraph,
-            new FArmTypeNumber,
-            new Aoicustomcard
+            (new ChartDashboard)
+                ->chartType('chart-bar')
+                ->chartName('Collateral')
+                ->dataChart([
+                    'Alpha' => 30,
+                    'Bravo' => 70,
+                    'Charlie' => 50,
+                    'Delta' => 10,
+                ]),
+
+            (new ChartDashboard)
+                ->chartType('chart-bar')
+                ->chartName('Collateral')
+                ->dataChart([
+                    'Alpha' => 50,
+                    'Bravo' => 10,
+                    'Charlie' => 70,
+                    'Delta' => 30,
+                ]),
+
+            (new ChartDashboard)
+                ->chartType('chart-doughnut')
+                ->chartName('Collateral')
+                ->dataChart([
+                    'Alpha' => 50,
+                    'Bravo' => 10,
+                    'Charlie' => 70,
+                    'Delta' => 30,
+                ]),
+            (new ChartDashboard)
+                ->chartType('chart-doughnut')
+                ->chartName('Collateral')
+                ->dataChart([
+                    'Alpha' => 30,
+                    'Bravo' => 70,
+                    'Charlie' => 50,
+                    'Delta' => 10,
+                ]),
         ];
     }
 

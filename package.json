@@ -15,7 +15,9 @@
         "build-ammos": "cd nova-components/views/ammos && npm run dev",
         "build-ammos-prod": "cd nova-components/views/ammos && npm run prod",
         "build-aoicustomcard": "cd nova-components/Aoicustomcard && npm run dev",
-        "build-aoicustomcard-prod": "cd nova-components/Aoicustomcard && npm run prod"
+        "build-aoicustomcard-prod": "cd nova-components/Aoicustomcard && npm run prod",
+        "build-chart-dashboard": "cd nova-components/ChartDashboard && npm run dev",
+        "build-chart-dashboard-prod": "cd nova-components/ChartDashboard && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.18",
