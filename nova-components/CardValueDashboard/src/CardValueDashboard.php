@@ -22,4 +22,11 @@ class CardValueDashboard extends Card
     {
         return 'card-value-dashboard';
     }
+
+    public function dataValue (array $request)
+    {
+        return $this->withMeta([
+            'data_value' => $request
+        ]);
+    }
 }

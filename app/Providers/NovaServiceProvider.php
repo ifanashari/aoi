@@ -97,6 +97,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     'Delta' => 10,
                 ]),
             (new CardValueDashboard)
+                ->dataValue([
+                    'Debitur Aktif' => 15,
+                    'Dokumen Kurang (ELO)' => 75,
+                    'Data Debitur Baru' => 35,
+                    'Data Fasilitas Baru' => 55,
+                ])
         ];
     }
 

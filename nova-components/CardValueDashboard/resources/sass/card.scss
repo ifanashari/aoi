@@ -4,7 +4,8 @@ $colors-list: #487efa, #f8607f, #9dc463, #ffb64d;
 .c-card-value-dashboard{
     .c-value-item   {
         width: calc((100% / 4) - 27px);
-        padding: 32px 20px;
+        height: 123px;
+        padding: 0 20px;
         background: #171a1d;
         color: white;
         border-radius: 5px;

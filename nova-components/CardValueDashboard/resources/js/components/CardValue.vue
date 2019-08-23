@@ -21,19 +21,46 @@ export default {
 
     data(){
         return{
-            values: [
-                {
-                    icon: 'i-user',
-                    color: 'media--1',
-                    label: 'alpha',
-                    value: 1
-                }
-            ]
+            values: []
         }
     },
 
-    methods: {
+    mounted(){
+        this.setValues()
+    },
 
+    methods: {
+        setValues(){
+            let $this = this
+            let tmpArr = Object.keys(this.card.data_value)
+            let tmpValues = []
+            let counter = 1
+            let icon = ''
+
+            tmpArr.forEach((arr) => {
+                if(arr === 'Debitur Aktif'){
+                    icon = 'i-user'
+                } else if(arr === 'Dokumen Kurang (ELO)'){
+                    icon = 'i-files'
+                } else if(arr === 'Data Debitur Baru'){
+                    icon = 'i-user'
+                } else if(arr === 'Data Fasilitas Baru'){
+                    icon = 'i-star'
+                }
+
+
+                $this.values.push(
+                    {
+                        icon: icon,
+                        color: 'media--' + counter,
+                        label: arr,
+                        value: $this.card.data_value[arr]
+                    }
+                )
+
+                counter++
+            })
+        }
     }
 }
 </script>
