@@ -7,6 +7,7 @@ use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use SmiCollateral\ChartDashboard\ChartDashboard;
+use SmiCollateral\CardValueDashboard\CardValueDashboard;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -95,6 +96,13 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     'Charlie' => 50,
                     'Delta' => 10,
                 ]),
+            (new CardValueDashboard)
+                ->dataValue([
+                    'Debitur Aktif' => 15,
+                    'Dokumen Kurang (ELO)' => 75,
+                    'Data Debitur Baru' => 35,
+                    'Data Fasilitas Baru' => 55,
+                ])
         ];
     }
 

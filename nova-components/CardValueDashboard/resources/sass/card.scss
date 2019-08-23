@@ -1,0 +1,56 @@
+// Nova Card CSS
+$colors-list: #487efa, #f8607f, #9dc463, #ffb64d;
+
+.c-card-value-dashboard{
+    .c-value-item   {
+        width: calc((100% / 4) - 27px);
+        height: 123px;
+        padding: 0 20px;
+        background: #171a1d;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .media{
+            width: 60px;
+            height: 60px;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+
+            svg{
+                width: 30px;
+                height: 30px;
+                margin: auto;
+
+                path{
+                    fill: white;
+                }
+            }
+        }
+
+        @each $current-color in $colors-list {
+            $i: index($colors-list, $current-color);
+            .media--#{$i} { 
+                background: $current-color;
+            }
+        }
+        
+        .body{
+            width: calc(100% - 80px);
+
+            .value{
+                font-size: 20px;
+                line-height: 27px;
+                margin-bottom: 8px;
+            }
+
+            .label{
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}

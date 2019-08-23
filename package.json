@@ -17,7 +17,9 @@
         "build-aoicustomcard": "cd nova-components/Aoicustomcard && npm run dev",
         "build-aoicustomcard-prod": "cd nova-components/Aoicustomcard && npm run prod",
         "build-chart-dashboard": "cd nova-components/ChartDashboard && npm run dev",
-        "build-chart-dashboard-prod": "cd nova-components/ChartDashboard && npm run prod"
+        "build-chart-dashboard-prod": "cd nova-components/ChartDashboard && npm run prod",
+        "build-card-value-dashboard": "cd nova-components/CardValueDashboard && npm run dev",
+        "build-card-value-dashboard-prod": "cd nova-components/CardValueDashboard && npm run prod"
     },
     "devDependencies": {
         "axios": "^0.18",

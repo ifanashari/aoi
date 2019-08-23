@@ -18,7 +18,8 @@
         "nova-custom-views/f-arms-views": "*",
         "nova-custom-views/ammos-views": "*",
         "rie/aoicustomcard": "*",
-        "smi-collateral/chart-dashboard": "*"
+        "smi-collateral/chart-dashboard": "*",
+        "smi-collateral/card-value-dashboard": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
@@ -94,6 +95,10 @@
         {
             "type": "path",
             "url": "./nova-components/ChartDashboard"
+        },
+        {
+            "type": "path",
+            "url": "./nova-components/CardValueDashboard"
         }
     ]
 }
