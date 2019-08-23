@@ -8,7 +8,7 @@
     "packages": [
         {
             "name": "aoi/AmmoField",
-            "version": "dev-feature/custom-field-ammo",
+            "version": "dev-feature/card-value-dashboard",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/AmmoField",
@@ -748,7 +748,7 @@
         },
         {
             "name": "laravel/nova",
-            "version": "dev-master",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "./nova",
@@ -1202,7 +1202,7 @@
         },
         {
             "name": "nova-custom-views/ammos-views",
-            "version": "dev-feature/custom-view",
+            "version": "dev-feature/card-value-dashboard",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/views/ammos",
@@ -1235,7 +1235,7 @@
         },
         {
             "name": "nova-custom-views/f-arms-views",
-            "version": "dev-feature/custom-view",
+            "version": "dev-feature/card-value-dashboard",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/views/f-arms",
@@ -1724,7 +1724,7 @@
         },
         {
             "name": "rie/aoicustomcard",
-            "version": "dev-feature/custom-card",
+            "version": "dev-feature/card-value-dashboard",
             "dist": {
                 "type": "path",
                 "url": "./nova-components/Aoicustomcard",
@@ -1761,7 +1761,7 @@
             "dist": {
                 "type": "path",
                 "url": "./nova-components/CardValueDashboard",
-                "reference": "36dcf9d00341278ccd11d2ec1369db0f148e4f92"
+                "reference": "dade7b38ee30aad91f438d5795da726f828b3102"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -1770,7 +1770,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "SmiCollateral\\CardValueDashboard\\ToolServiceProvider"
+                        "SmiCollateral\\CardValueDashboard\\CardServiceProvider"
                     ]
                 }
             },
@@ -1782,7 +1782,7 @@
             "license": [
                 "MIT"
             ],
-            "description": "A Laravel Nova tool.",
+            "description": "A Laravel Nova card.",
             "keywords": [
                 "laravel",
                 "nova"
@@ -1858,9 +1858,9 @@
             "authors": [
                 {
                     "name": "Freek Van der Herten",
+                    "role": "Developer",
                     "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
+                    "homepage": "https://spatie.be"
                 }
             ],
             "description": "A magic memoization function",
@@ -3285,8 +3285,8 @@
             "authors": [
                 {
                     "name": "Tijs Verkoyen",
-                    "email": "css_to_inline_styles@verkoyen.eu",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "css_to_inline_styles@verkoyen.eu"
                 }
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
@@ -3838,18 +3838,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -3885,18 +3885,18 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library for handling version information and constraints",
@@ -4167,8 +4167,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that provides collection, processing, and rendering functionality for PHP code coverage information.",
@@ -4218,8 +4218,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "FilterIterator implementation that filters files based on a list of suffixes.",
@@ -4260,8 +4260,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Simple template engine.",
@@ -4309,8 +4309,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Utility class for timing",
@@ -5011,8 +5011,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
@@ -5052,8 +5052,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
